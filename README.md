@@ -89,8 +89,8 @@ npm run dev
 npm run dev
 ```
 
-API Integration 🌐
-The dashboard integrates with these Laravel API endpoints:
+## API Integration 🌐
+### The dashboard integrates with these Laravel API endpoints:
 
 Endpoint	Method	Description
 /api/rooms	GET	List all rooms
@@ -105,8 +105,8 @@ const { data: rooms } = await useFetch('/api/rooms', {
 })
 ```
 
-State Management 🧠
-Pinia store architecture:
+## State Management 🧠
+### Pinia store architecture:
 
 ```javascript
 // stores/smartHome.ts
@@ -129,7 +129,7 @@ export const useSmartHomeStore = defineStore('smartHome', {
   }
 })
 ```
-Key Components 🔑
+## Key Components 🔑
 
 ```javascript
 
@@ -149,8 +149,8 @@ Key Components 🔑
 </script>
 
 ```
-Performance Optimization 🚀
-Server-Side Rendering
+## Performance Optimization 🚀
+### Server-Side Rendering
 
 ```javascript
 
@@ -161,7 +161,7 @@ export default defineNuxtConfig({
 })
 ```
 
-Smart Data Fetching
+### Smart Data Fetching
 
 ```javascript
 const { pending, data } = useAsyncData(
