@@ -1,0 +1,14 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "es2020", // or at least "es2017"
+    "module": "esnext", // or "es2022", "node16", etc.
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "types": ["vue/macros-global", "nuxt", "node"]
+  }
+}
